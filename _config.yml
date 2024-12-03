@@ -39,7 +39,7 @@ defaults:
     values:
       sidebar: about
 
-theme_variables: 
+#theme_variables:
   # git_host: GitHub
   # back_to_top: true
   # privacy_statement_url: /privacy
