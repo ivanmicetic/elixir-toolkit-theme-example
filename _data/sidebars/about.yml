@@ -1,0 +1,15 @@
+title: About
+title_url: /about
+subitems:
+  - title: Community
+    subitems:
+      - title: Contributors
+        url: /contributors
+  - title: Support & funding
+    url: /support
+  - title: Contact
+    url: /contact
+  - title: Accessibility
+    url: /accessibility
+  - title: Privacy
+    url: /privacy

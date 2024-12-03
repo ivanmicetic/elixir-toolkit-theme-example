@@ -1,21 +1,29 @@
-title: My Website
+title: ELIXIR Data Steward Handbook
 # This appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-topnav_title: My Website
-# Optional: this appears on the top navigation bar next to the main_logo.svg icon
-
-description: "Example of ELIXIR toolkit theme as a remote jekyll theme"
+description: "ELIXIR Data Steward Handbook"
 # Metadata description of the website
 
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@3.0.0
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@3.2.0
+
+topnav_title: Data Steward Handbook
+# Optional: this appears on the top navigation bar next to the main_logo.svg icon
+
+theme_variables:
+  topnav:
+    brand_logo: assets/img/main_logo.svg
+
+sass:
+  style: compressed
+  sourcemap: never
 
 exclude:
   - README.md
   - vendor
   - Gemfile
 
-defaults:
 # Define here page metadata attributes for all pages at once or on specific directories. More information: https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
   -
     scope:
       path: ""
@@ -23,7 +31,13 @@ defaults:
     values:
       permalink: /:basename
       layout: "page"
-      sidebar: main
+      search_exclude: false
+#      sidebar: main
+  -
+    scope:
+      path: "pages/about"
+    values:
+      sidebar: about
 
 theme_variables: 
   # git_host: GitHub
